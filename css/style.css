@@ -1,0 +1,236 @@
+:root {
+    /* --main-color : red */
+    --backgorund-color : #161b22;
+
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+} 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d1117 !important;
+    color: white !important;
+}
+ul {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.mega-nav {
+    background-color: 0d1117;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(143, 143, 143);
+    margin-top: 20px;
+}
+@media (max-width: 767px) {
+    .mega-nav {
+        overflow-y: auto;
+    }
+}
+.mega-nav div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.mega-nav div ul li {
+    margin: 0 20px;
+    display: flex;
+}
+.mega-nav div ul li.active,
+.mega-nav div ul li:hover{
+    border-bottom: 1px solid orange;
+    cursor: pointer;
+}
+.mega-nav ul li span {
+    background-color: #80808085;
+    padding: 0px 8px;
+    border-radius: 50%;
+}
+/**/
+main {
+    margin-top: 20px;
+    position: relative;
+}
+
+main .left {
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+}
+main .left img{
+    border-radius: 50%;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    main .left {
+        /* flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start; */
+        top: 0;
+    }
+    main .left img {
+        width: 50%;
+    }
+} */
+
+main .span {
+    color: gray;
+}
+main .edit-btn {
+    background-color: #30363d;
+    color: white;
+    border: 1px grey solid;
+    padding: 2px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+main .edit-btn:hover {
+    border-color: white;
+}
+main .left a {
+    text-decoration: none;
+    color: white;
+}
+main .left a:hover span{
+    color: white;
+}
+main .left p i {
+    color: grey;
+}
+main .left ul {
+    padding: 0;
+}
+main .left ul li {
+    font-size: 16px;
+}
+main .left ul li i{
+    margin-right: 10px;
+}
+
+/*repo cards*/
+.right {
+    padding: 25px;
+}
+.repository {
+    background-color: #0d1117;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    border-radius: 5px;
+    padding: 10px;
+    height: 131px;
+    position: relative;
+}
+.repository .repo-head {
+    display: flex;
+    justify-content: space-between;
+}
+.repository .repo-head a {
+    text-decoration: none;
+}
+.repository .repo-head p {
+    font-size: 12px;
+    color: gray;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    padding: 0px 10px;
+}
+.repository .repo-desc {
+    font-size: 14px;
+    color: gray;
+} 
+.lang {
+    position: absolute;
+    bottom: 0;
+}
+.lang p {
+    position: relative;
+    margin-left: 15px;
+    color: gray;
+    font-size: 14px;
+}
+.lang p::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+
+
+/* ///////////////////////// */
+
+.compare {
+    margin: 0 !important;
+    padding: 0;
+    /* margin-bottom: 10px; */
+}
+.compare .profile {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    gap: 5px;
+    border: 1px solid white;
+    padding: 10px;
+}
+.compare div input {
+    width: 50%;
+    background-color: black;
+    border: 2px grey solid;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 10px auto;
+    color: white;
+}
+.img-div {
+    width: 300px;
+    height: 300px;
+}
+.compare div img{
+    width: 100%;
+    border-radius: 50%;
+}
+.compare-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.compare-button button {
+    padding: 10px 30px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+.compare-button button:hover{
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.winner {
+    color: rgb(6, 199, 6) 
+}
+.loser {
+    color: red
+}
+.draw {
+    color: grey;
+}
